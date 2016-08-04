@@ -64,3 +64,8 @@ kernel: $(INSTALLED_KERNEL_TARGET)
 
 .PHONY: rpi-bootimage
 rpi-bootimage: $(INSTALLED_RPI_BOOTIMAGE_TARGET)
+
+droidcore: \
+   partition \
+   kernel \
+   rpi-bootimage
